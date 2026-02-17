@@ -1,6 +1,14 @@
 # TaskFlow - MERN Task Management Application
 
-A full-stack task management application built with the MERN stack (MongoDB, Express.js, React,Node.js) with JWT authentication.
+A full-stack task management application built with the MERN stack (MongoDB, Express.js, React, Node.js) with JWT authentication.
+
+## 🚀 Live Demo
+
+**Deployed Application:** [https://taskflow-ten-lime.vercel.app/](https://taskflow-ten-lime.vercel.app/)
+
+- **Frontend:** Deployed on Vercel
+- **Backend:** Deployed on Vercel (Serverless Functions)
+- **Database:** MongoDB Atlas
 
 ## Features
 
@@ -170,15 +178,16 @@ No default users. Register a new account to get started.
 
 ## Deployment
 
-### Backend Deployment (Render/Railway/Heroku)
-1. Set environment variables in your hosting platform
-2. Update MONGODB_URI to MongoDB Atlas connection string
-3. Deploy backend
+This application is deployed on Vercel:
+- **Frontend**: [https://taskflow-ten-lime.vercel.app/](https://taskflow-ten-lime.vercel.app/)
+- **Backend**: Vercel Serverless Functions
+- **Database**: MongoDB Atlas
 
-### Frontend Deployment (Vercel/Netlify)
-1. Build the frontend: `npm run build`
-2. Deploy the `dist` folder
-3. Update API URL if needed
+### Deployment Architecture
+- Frontend and backend are deployed as separate Vercel projects
+- Backend uses the `/api` folder structure for serverless functions
+- Environment variables configured in Vercel dashboard
+- Automatic deployments on git push
 
 ## License
 
