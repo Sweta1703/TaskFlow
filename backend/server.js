@@ -27,6 +27,11 @@ app.use(cors({
         // Allow requests with no origin (like mobile apps or Postman)
         if (!origin) return callback(null, true);
 
+        // Allow any vercel.app domain during development
+        if (origin.includes('vercel.app')) {
+            return callback(null, true);
+        }
+
         if (allowedOrigins.indexOf(origin) !== -1) {
             callback(null, true);
         } else {
