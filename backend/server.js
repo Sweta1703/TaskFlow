@@ -39,6 +39,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+// Note: /api prefix is handled by Vercel's /api folder structure
 app.get('/', (req, res) => {
     res.json({
         message: 'TaskFlow API is running',
@@ -46,9 +47,9 @@ app.get('/', (req, res) => {
     });
 });
 
-app.use('/api/auth', authRoutes);
-app.use('/api/tasks', taskRoutes);
-app.use('/api/profile', profileRoutes);
+app.use('/auth', authRoutes);
+app.use('/tasks', taskRoutes);
+app.use('/profile', profileRoutes);
 
 // Error handling
 app.use(notFound);
