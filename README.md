@@ -180,7 +180,7 @@ No default users. Register a new account to get started.
 
 This application is deployed on Vercel:
 - **Frontend**: [https://taskflow-ten-lime.vercel.app/](https://taskflow-ten-lime.vercel.app/)
-- **Backend**: Vercel Serverless Functions
+- **Backend**: https://task-flow-backend-psi.vercel.app/
 - **Database**: MongoDB Atlas
 
 ### Deployment Architecture
